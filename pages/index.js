@@ -23,7 +23,7 @@ export default function Home() {
     try{
     let hookData = await fetch(url)
     let res = await hookData.json()
-    setHookName(res.name)
+    await setHookName(res.name)
     
     }catch{}
     finally{
